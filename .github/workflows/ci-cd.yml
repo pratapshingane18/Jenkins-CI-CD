@@ -32,3 +32,9 @@ jobs:
         run: |
           echo $env:KUBE_CONFIG_DATA | base64 --decode > kubeconfig  # Adjusted for Windows
           kubectl --kubeconfig=kubeconfig apply -f k8s-deployment.yaml --validate=false
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+        with:
+          privileged: false
+
