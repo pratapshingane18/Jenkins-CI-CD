@@ -10,14 +10,7 @@ app.get('/home', (req, res) => {
     res.send('This is home!');
 });
 
-app.get('/games', (req, res) => {
-    res.send('This is games!');
-});
 
-
-app.get('/act', (req, res) => {
-    res.send('This is games!');
-});
 
 app.get('/check', (req, res) => {
     res.send('This is games!');
