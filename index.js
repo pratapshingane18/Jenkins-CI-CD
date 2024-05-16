@@ -18,6 +18,10 @@ app.get('/games', (req, res) => {
 app.get('/act', (req, res) => {
     res.send('This is games!');
 });
+
+app.get('/check', (req, res) => {
+    res.send('This is games!');
+});
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);
 });
